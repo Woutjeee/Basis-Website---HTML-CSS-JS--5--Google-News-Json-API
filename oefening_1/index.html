@@ -8,15 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Welk artikel wilt u lezen, er zijn op het moment : <span id="howManyArticles"></span></p>
-    <input type="text" placeholder="Welk Artikel" id="numInputField"><br>
-    <button onclick="proccesArticle()">Click me</button>
+    <div class="aritcle-choise">
+        <p>Welk artikel wilt u lezen, er zijn op het moment : <span id="howManyArticles"></span></p>
+        <input type="text" placeholder="Welk Artikel" id="numInputField"><br>
+        <button onclick="proccesArticle()">Click me</button>
+    </div>
     <div class="artcicle-1">
-        <p id="date"></p>
+        <p id="date" class="left"></p><br><br>
         <h3 id="author"></h3>
-        <h1 id="article-1-header"></h1>      
+        <hr>
+        <h1 id="article-1-header"></h1>   
         <p id="article-1-description"></p>
         <p id="article-1-content"></p>
+        <hr>
         <a id="url" href=""></a>
     </div>
 </body>

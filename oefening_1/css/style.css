@@ -1,0 +1,31 @@
+.artcicle-1 {
+    background-color: #353839;
+    padding: 15px;
+    border-radius: 15px;
+    color: #A4A29E;
+    text-align: center;
+    height: 400px;
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+#url {
+    text-decoration: none;
+    color: #924dd1;
+    float: left;
+}
+
+#url:hover {
+    text-decoration: underline;
+}
+
+.aritcle-choise {
+    width: 200px;
+    background-color: #353839;
+    color: #A4A29E;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}

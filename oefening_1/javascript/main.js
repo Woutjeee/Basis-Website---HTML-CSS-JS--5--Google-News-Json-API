@@ -2,6 +2,8 @@ var url = 'http://newsapi.org/v2/top-headlines?' + 'country=nl&' + 'apiKey=fa5b7
 var req = new Request(url);
 var numOfArticles = 0;
 
+
+
 function convertToJson(response){
     return response.json();
 }
@@ -18,9 +20,10 @@ function articles(data){
     document.querySelector("#howManyArticles").innerHTML = numOfArticles - 1;
     console.log(numOfArticles);
 }
+
+
 function proccesArticle(){
     var numInput = document.querySelector("#numInputField").value;
-
 
     if(numInput > numOfArticles){
         alert("Dit artikel bestaat niet");
@@ -30,8 +33,8 @@ function proccesArticle(){
             .then(function (data) {
                 document.querySelector("#date").innerHTML = data.articles[numInput].publishedAt;
                 document.querySelector("#article-1-header").innerHTML = data.articles[numInput].title;           
-                document.querySelector("#author").innerHTML = data.articles[numInput].author + " :";
-                document.querySelector("#article-1-description").innerHTML = data.articles[numInput].description;
+                document.querySelector("#author").innerHTML = data.articles[numInput].author;
+                document.querySelector("#article-1-description").innerHTML = "Description : " + data.articles[numInput].description;
                 document.querySelector("#article-1-content").innerHTML = data.articles[numInput].content;
                 document.querySelector("#url").innerHTML = data.articles[numInput].url;
             })
